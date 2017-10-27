@@ -3,9 +3,6 @@
 <ul>
         {% for blog in blogs %}
         <li><h1><a href="/blog?id={{blog.id}}" >{{blog.title}}</a></h1>
-        <li><h1><a href="/blog?users={{blog.owner.id}}"></h1>{{blog.owner.username}}</a></h1>
-        </li>
-
         {% endfor %}
 
 

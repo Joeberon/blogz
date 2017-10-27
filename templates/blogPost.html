@@ -1,4 +1,4 @@
-blog.href =blog.id
+
 
 {% extends "base.html" %}
 
@@ -6,5 +6,6 @@ blog.href =blog.id
 <h1>  </h1>
 <h1>{{singBlog.title}}</h1>
     {{singBlog.body}}
+    <a href="/blog?users={{singBlog.owner.id}}"></h1>{{singBlog.owner.username}}</a></h1>
     {% endblock %}
 
